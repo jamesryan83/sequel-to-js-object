@@ -1,7 +1,7 @@
 
 ## SQL file to JavaScript object literal
 
-Synchronously parses an *.sql file containing statemests seperated by `GO` keywords and returns the statements as a JavaScript object literal
+Synchronously parses an *.sql file containing statements seperated by `GO` keywords and returns the statements as a JavaScript object literal
 
 Include SQL files into other SQL files and replace parts of them with JSON data
 
