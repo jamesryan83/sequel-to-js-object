@@ -44,7 +44,8 @@ In mysqlfile2.sql in same directory as mysqlfile.sql:
 
 In node:
 
-    var sql2obj = require("../index");
+    (not on npm yet)
+    var sql2obj = require("index.js");
     var result = sql2obj.parseSync("examples/mysqlfile", { my_variable: 7 });    
     console.log(result):
 
