@@ -1,15 +1,15 @@
 
-##SQL file to object
+## SQL file to JavaScript object literal
 
-Parses an *.sql file synchronously and returns the statements as a json object
+Synchronously parses an *.sql file containing statemests seperated by `GO` keywords and returns the statements as a JavaScript object literal
 
-Include SQL files into other SQL files and replace parts of them with json data
+Include SQL files into other SQL files and replace parts of them with JSON data
 
 ### Why
 
 Simple organization of raw SQL files.  Has some similarities to Sass, the css preprocesser (i.e. includes and variables)
 
-Allows easy separation of any variables, such as column lengths, into a json file which
+Allows easy separation of any variables, such as column lengths, into a JSON file which
 can then be used elsewhere in the application (like for client-side input validation)
 
 ### Installation
@@ -73,16 +73,16 @@ The format of each statement in the SQL file must be like this:
         EVERY STATEMENT HAS TO END WITH GO
     GO
 
-For &lt;json property name&gt;, spaces are replaced with "-"
+For `<json property name>`, spaces are replaced with `-`
 
-&lt;&lt;variables&gt;&gt; are replaced by data passed to the parseSync function.  The property name in the data
-must match the variable name in the SQL (i.e. { "test": value } maps to &lt;&lt;test&gt;&gt; which will be replaced by value)
+`<<variables>>` are replaced by data passed to the `parseSync` function.  The property name in the data
+must match the variable name in the SQL (i.e. `{ "test": value }` maps to `<<test>>` which will be replaced by `value`)
 
-This library only copies your SQL into a json object and inserts variables, it doesn't check your statements for errors or anything like that
+This library doesn't check your statements for errors or anything like that
 
-Includes are relative to the file passed into parseSync
+`--include`'s are relative to the directory of the file passed into `parseSync`
 
-Physical files must end in *.sql, but it's optional everywhere else (e.g "--include my-file" is parsed as my-file.sql)
+Physical files you pass in and include must have the extension *.sql
 
 ### Tests
 
