@@ -1,0 +1,22 @@
+{
+  "name": "sequel-to-js-object",
+  "version": "1.0.0",
+  "description": "Convert an SQL script to a javascript object literal",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha ./test/test_index.js",
+    "example": "node examples/example.js"
+  },
+  "keywords": [
+    "sql",
+    "parser",
+    "javascript",    
+	"includes",
+	"variables"
+  ],
+  "author": "jamesryan83",
+  "license": "MIT",
+  "devDependencies": {
+    "sinon": "^3.2.1"
+  }
+}

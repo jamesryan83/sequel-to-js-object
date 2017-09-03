@@ -1,0 +1,6 @@
+{
+    "variable1": 123,
+    "variable2": "fullname",
+    "variable3": "NOT NULL",
+    "variable4": "fullname NVARCHAR(255) NOT NULL"
+}
