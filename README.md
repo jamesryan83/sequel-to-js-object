@@ -14,7 +14,7 @@ can then be used elsewhere in the application (like for client-side input valida
 
 ### Installation
 
-    not on npm yet
+not on npm yet
 
 
 ### Usage
