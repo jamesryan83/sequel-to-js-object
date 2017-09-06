@@ -14,7 +14,7 @@ can then be used elsewhere in the application (like for client-side input valida
 
 ### Installation
 
-    npm install sql-file-to-object --save-dev
+    not on npm yet
 
 
 ### Usage
